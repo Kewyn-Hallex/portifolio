@@ -29,6 +29,34 @@
     border-radius: 20px;
 }
 
+@media (max-width: 680px) {
+    .witheBox {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+/* Responsividade para dispositivos pequenos */
+@media (max-width: 480px) {
+    .container_top {
+        height: 150px;
+    }
+
+    .nome {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    .dev {
+        font-size: 14px;
+    }
+
+    .tabs-box .tab {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
 .perfil{
     width: 125px;
     height: 125px;

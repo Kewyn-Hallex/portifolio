@@ -49,7 +49,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
     if (!isDragging) return;
     const x = e.pageX || e.touches[0].pageX;
-    const walk = (x - startX) * 1.5; // Adjust scroll speed
+    const walk = (x - startX) * 0.75; // Adjust scroll speed
     tabsBox.scrollLeft = scrollLeft - walk;
     handleIcons(tabsBox.scrollLeft);
 };
