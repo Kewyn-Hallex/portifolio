@@ -117,10 +117,13 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 .tabs-box.dragging {
     scroll-behavior: auto;
-    cursor: grab;
+    cursor: grabbing;
+    user-select: none;
 }
+
 .tabs-box .tab {
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -153,6 +156,15 @@
 .tabs-box .tab a:hover{
     text-decoration: none;
     color: white;
+}
+
+.tabs-box {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    cursor: grab; /* Add cursor for draggable area */
 }
 
 .dev2{
