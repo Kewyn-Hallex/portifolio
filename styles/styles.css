@@ -23,7 +23,7 @@
 .witheBox{
     margin-top: -50px;
     width: 450px;
-    height: 700px;
+    height: 800px;
     background-color: white;
     box-shadow: rgba(45, 74, 83, 0.50) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 20px;
@@ -199,3 +199,63 @@
     text-align: center;
     margin: 0px 15px;
 }
+
+.central-catalogo {
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slider .card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.slider {
+    /* ... other styles ... */
+    cursor: grab; /* Change cursor to grab on hover */
+  }
+  
+  .slider:active {
+    cursor: grabbing; /* Change cursor to grabbing while dragging */
+  }
